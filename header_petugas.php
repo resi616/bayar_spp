@@ -26,10 +26,10 @@ session_start();
               <a class="nav-link active" aria-current="page" href="buku.php">Tagihan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="tambah_siswa.php">Tambah Siswa</a>
+              <a class="nav-link active" aria-current="page" href="tampil_siswa.php">Tampil Siswa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="histori_peminjaman.php">History-Transaksi</a>
+              <a class="nav-link active" aria-current="page" href="tampil_petugas.php">tampil petugas</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="logout.php">Logout</a>

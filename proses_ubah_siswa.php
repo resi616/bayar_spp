@@ -8,10 +8,11 @@ if($_POST){
     $no_telp=$_POST['no_telp'];
     if(empty($nama_siswa)){
         echo "<script>alert('nama siswa tidak boleh kosong');location.href='tambah_siswa.php';</script>";
- 
+    } elseif(empty($nisn)){
+        echo "<script>alert('nisn tidak boleh kosong');location.href='tambah_siswa.php';</script>";
     } elseif(empty($nis)){
         echo "<script>alert('nis tidak boleh kosong');location.href='tambah_siswa.php';</script>";
-    } else {
+    }else {
         include "connect.php";
         if(empty($nisn)){
             $update=mysqli_query($conn,"update siswa set nisn='".$nisn."',nis='".$nis."', nama_siswa='".$nama_siswa."', alamat='".$alamat."', no_telp='".$no_telp."', id_kelas='".$id_kelas."' where id_kelas = '".$id_kelas."' ") or die(mysqli_error($conn));

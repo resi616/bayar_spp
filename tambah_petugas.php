@@ -13,6 +13,10 @@
         <input type="password" name="password" value="" class="form-control">
         nama petugas : 
         <input type="nama_petugas" name="nama_petugas" value="" class="form-control">
+        kota : 
+        <input type="kota" name="kota" value="" class="form-control">
+        alamat : 
+        <input type="alamat" name="alamat" value="" class="form-control">
         level : 
         <select name="level" class="form-control">
             <option></option>

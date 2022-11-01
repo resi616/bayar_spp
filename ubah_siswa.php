@@ -29,7 +29,7 @@ id_kelas = '".$_GET['id_siswa']."'");
         <select name="id_kelas" class="form-control">
             <option></option>
             <?php 
-            include "koneksi.php";
+            include "connect.php";
             $qry_kelas=mysqli_query($conn,"select * from kelas");
             while($data_kelas=mysqli_fetch_array($qry_kelas)){
                 if($data_kelas['id_kelas']==$dt_siswa['id_kelas']){
